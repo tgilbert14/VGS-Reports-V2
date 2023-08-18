@@ -78,7 +78,7 @@ shinyUI(
           ## use to be submit button - need to update server
           
           
-          actionButton("go", "  Load", icon = icon("bell-concierge"),
+          actionButton("go", "  Process File", icon = icon("upload"),
                        style="color: white; background-color: green; border-color: black",
                        width = "100%")),
           
