@@ -6,13 +6,6 @@ shinyUI(
   fluidPage(
     theme = shinytheme("flatly"),
     collapsable = TRUE,
-    tags$head(
-      HTML(
-        "<link
-                   href='http://fonts.googleapis.com/css?family=Jura'
-                   rel='stylesheet' type='text/css'>"
-      )
-    ),
     
     shiny::navbarPage(
       tags$head(tags$style(HTML(
@@ -20,7 +13,7 @@ shinyUI(
       ))),
       
       theme = bs_theme(
-        bg = "Gray",
+        bg = "Green",
         fg = "DarkTurquoise",
         primary = "Black",
         secondary = "DarkOrange",
@@ -31,17 +24,17 @@ shinyUI(
     
     # Application title
     h2(
-      "VGS Client Script Host",
+      "VGS Export-Importer",
       style = "font-family: 'Jura';
-       color: dark blue; font-size: 52px;"
+       color: green; font-size: 52px;"
     ),
     p(
       "Upload an Excel file from a VGS Export on this tab, then select an Excel Sheet -",
-      style = "font-family: 'Jura'; color: dark blue; font-size: 14px;"
+      style = "font-family: 'Jura'; color: green; font-size: 14px;"
     ),
     p(
       "(The 'Selected Excel Sheet' is what will be ran through the selected script in the next tab)",
-      style = "font-family: 'Jura'; color: dark blue; font-size: 14px;"
+      style = "font-family: 'Jura'; color: green; font-size: 14px;"
     ),
     
     # Sidebar
@@ -67,8 +60,9 @@ shinyUI(
             selected = F,
             multiple = F
           ),
-          htmlTemplate("template.html",
-                       button = submitButton("Load Columns")),
+
+          submitButton("Load Columns"),
+          
           br(),
           selectInput(
             'value_choice',
@@ -77,8 +71,15 @@ shinyUI(
             multiple = T,
             selectize = T
           ),
-          htmlTemplate("template.html",
-                       button = submitButton("Load Data Table"))),
+          
+          
+          
+          
+          ## use to be submit button - need to update server
+          
+          
+          actionButton("go", "Load Data Table",
+                       style="color: white; background-color: green; border-color: black")),
           
           p("Contact tsgilbert@arizona.edu with any feedback",
             style = "font-family: 'Jura'; color: dark blue; font-size: 14px;"),

@@ -2,7 +2,11 @@
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
   
-  result_auth <- secure_server(check_credentials = check_credentials(credentials))
+  # Show a modal when the button is pressed
+  shinyalert("VGS Export-Importer", "Upload a file then select script to run!",
+             type = "success",
+             imageUrl = "https://portal.vgs.arizona.edu/Content/Images/VGS_DarkGreen.png")
+             #imageUrl = "https://portal.vgs.arizona.edu/Content/Images/vgs_logo_white.png")
   
   output$res_auth <- renderPrint({
     reactiveValuesToList(result_auth)

@@ -13,7 +13,7 @@ library(plotly)
 library(RColorBrewer)
 library(shiny)
 library(shinymanager)
-
+library(shinyalert)
 ## allows larger file upload
 options(shiny.maxRequestSize=30*1024^2)
 
