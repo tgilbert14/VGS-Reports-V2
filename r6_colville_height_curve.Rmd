@@ -1,0 +1,46 @@
+---
+title: "R6 Colville Height-Curve Summary Report"
+#author: "Timothy Gilbert"
+##email: "tsgilbert35@hotmail.com
+#date: "10/17/2021"
+output: html_document
+#runtime: shiny
+#####################################################################################
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(readr)
+library(data.table)
+library(knitr)
+library(kableExtra)
+library(shiny)
+
+
+# ## reading in beetle tracking sheet...
+# chpe<- read_csv(paste0('data/Carabid_and_IB_Tracking_',Sys.Date(),'.csv'))
+# 
+# chpe_f<- chpe %>% 
+#   filter(!is.na(`# of individuals`))
+# 
+# 
+# chpe_f<- chpe_f %>% 
+#   select(`Vial ID`,`# of individuals`,Identification,`...9`) %>% 
+#   rename(Identifier = `...9`)
+# 
+# ## empty Table to fill up w/ data labels
+# local_labels2 <- data.table(BET_ID_QC=character())
+data2
+
+
+
+```
+
+
+
+```{r pressure, echo=FALSE}
+
+## makes up to 250 labels
+print("test")
+
+```
