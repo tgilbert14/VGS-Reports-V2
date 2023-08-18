@@ -78,8 +78,9 @@ shinyUI(
           ## use to be submit button - need to update server
           
           
-          actionButton("go", "Load Data Table",
-                       style="color: white; background-color: green; border-color: black")),
+          actionButton("go", "  Load", icon = icon("bell-concierge"),
+                       style="color: white; background-color: green; border-color: black",
+                       width = "100%")),
           
           p("Contact tsgilbert@arizona.edu with any feedback",
             style = "font-family: 'Jura'; color: dark blue; font-size: 14px;"),

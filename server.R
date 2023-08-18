@@ -128,25 +128,25 @@ shinyServer(function(input, output, session) {
     }
     
     if (input$select_user == " ") {
-      base::source('other.R', local=TRUE)
+      base::source('scripts/other.R', local=TRUE)
     }
     if (input$select_user == "WMAT_Average") {
-      base::source('Wmat.R', local=TRUE)
+      base::source('scripts/Wmat.R', local=TRUE)
     }
     if (input$select_user == "Coronado Riparian Veg Plot") {
-      base::source('Coronado.R', local=TRUE)
+      base::source('scripts/Coronado.R', local=TRUE)
     }
     if (input$select_user == "NRCS - Zig Zag") {
-      base::source('NRCS_ZigZag.R', local=TRUE)
+      base::source('scripts/NRCS_ZigZag.R', local=TRUE)
     }
     if (input$select_user == "Annual Plants Compare") {
-      base::source('ashley.R', local=TRUE)
+      base::source('scripts/ashley.R', local=TRUE)
     }
     if (input$select_user == "R6 Relative Frequency") {
-      base::source('R6_relative_freq.R', local=TRUE)
+      base::source('scripts/R6_relative_freq.R', local=TRUE)
     }
     if (input$select_user == "R6 Height-Curve Evaluation") {
-      base::source('r6_colville_height_curve.R', local=TRUE)
+      base::source('scripts/r6_colville_height_curve.R', local=TRUE)
     }
     
       my_data <- DT::datatable(data2, editable = TRUE, rownames = FALSE,
@@ -172,27 +172,27 @@ shinyServer(function(input, output, session) {
     }
     
     if (input$select_user == " ") {
-      base::source('other.R', local=TRUE)
+      base::source('scripts/other.R', local=TRUE)
     }
     
     if (input$select_user == "Freq over time") {
-      base::source('plotly.R', local=TRUE)
+      base::source('scripts/plotly.R', local=TRUE)
     }
     
     if (input$select_user == "WMAT_Average") {
-      base::source('Wmat.R', local=TRUE)
+      base::source('scripts/Wmat.R', local=TRUE)
     }
     if (input$select_user == "Coronado Riparian Veg Plot") {
-      base::source('Coronado.R', local=TRUE)
+      base::source('scripts/Coronado.R', local=TRUE)
     }
     if (input$select_user == "NRCS - Zig Zag") {
-      base::source('NRCS_ZigZag.R', local=TRUE)
+      base::source('scripts/NRCS_ZigZag.R', local=TRUE)
     }
     if (input$select_user == "Annual Plants Compare") {
       base::source('ashley.R', local=TRUE)
     }
     if (input$select_user == "R6 Relative Frequency") {
-      base::source('R6_relative_freq.R', local=TRUE)
+      base::source('scripts/R6_relative_freq.R', local=TRUE)
     }
     
     
